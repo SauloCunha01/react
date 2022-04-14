@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 
 import Primeiro from './componets/basicos/Primeiro'
+import ComParametro  from './componets/basicos/ComParametro'
 const msg = 'Seja bem-vindo ao curso de React'
 
 ReactDOM.render(
-    <div>
+    <div id="app">
         <Primeiro></Primeiro>
-        <Primeiro></Primeiro>
+        <ComParametro 
+        titulo="Segundo Componente" 
+        subtitulo="Muito Legal!" />
         {msg}
     </div>
     
