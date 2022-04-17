@@ -1,6 +1,7 @@
 import React from "react"
 import ComParametro from "./componets/basicos/ComParametro"
 import Fragmento from "./componets/basicos/Fragmento"
+import Aleatorio from "./componets/basicos/Aleatorio"
 /* Export default = você pode retornar uma função anônima (remove App)
 remove a palavra function e converte para uma função parametrizada ( =>)
 Remover parametros da função, já que só tem apenas um parâmetro nela
@@ -9,17 +10,10 @@ retirar o corpo da função { } isso retorna implicitamente tudo que está dentr
 */
 export default _props=>
 
-        /* 
-        App.jsx Representa a aplicação
-        Esta função esta totalmente sem otimização
-        */
+
         <div id="app">
             <h1>Fundamentos de React</h1>
-            <h2>Função arrow => </h2>
-            <ComParametro
-            titulo="Situação do Aluno"
-            Subtítulo="Pedro Silva"
-            />
-            <Fragmento/> 
+            
+            <Aleatorio min={3} max={15} />
         </div>
 
